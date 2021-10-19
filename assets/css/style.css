@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+      font-family: 'Lato', sans-serif;
+      margin:0;
+}
+
+h1{
+    font-size:3rem;
+    margin:20px 0;
+    
+}
+
+ol{
+  display:;
+}
