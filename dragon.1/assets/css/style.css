@@ -1,37 +1,139 @@
+/*Color codes for demo*/
+/*#00010D - Dark blue*/
+/*#0455BF - Blue*/
+/*#023373 - Navy blue*/
+/*#010D00 - Darker blue*/
+/*#F0F2A7 - Dark Cream*/
+
+
+/*Font families I like*/
+/* 'Lato', sans-serif */
+
+html{
+  box-sizing:border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing:inherit;
+}
+
+body{
+      font-family: 'Lato', sans-serif;
+      margin:0;
+      line-height:1.6;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+h1.logo {
+    margin-top: 15px; /* for this particular site, set this as you like */
+    position: relative; /* allows child element to be placed positioned wrt this one */
+    overflow:hidden; /* don’t let content leak beyond the header - not needed as height of anchor will cover whole header */
+    padding: 0; /* needed to counter the reset/default styles */
+}
+
+h1.logo a {
+    position: absolute; /* defaults to top:0, left:0 and so these can be left out */
+    height: 0; /* hiding text, prevent it peaking out */
+    width: 100%; /* 686px; fill the parent element */
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+#logo {
+    height: 60px; /* height of replacement image */
+}
+
+#logo a {
+    padding-top: 60px; /* height of the replacement image */
+    background-image: url("SpaceX-Logo.png"); /* the replacement image */
+}
+
+.container{
+  width: 70vw;
+  margin: 40px auto;
+  max-width: 960px;
+}
+
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#333;
+}
+
+li{
+  float:left;
+}
+
+li a{
+  display:block;
+  color:white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+}
+
+li a:hover{
+  background-color:#111;
+}
+
+.active{
+  background-color:#0455BF;
+}
+
+table{
+  width:100%;
+  border:1px solid #F0F2A7;
+  border-collapse:collapse;
+}
+
+table caption{
+  color:#F0F2A7;
+  padding:5px;
+  font-weight:bold;
+  font-size:1.4rem;
+}
+
 /*Button style*/
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+.accordion{
+  background-color:#eee;
+  color:#444;
+  cursor:pointer;
+  padding:18px;
+  width:100%;
+  text-align:left;
+  border:none;
+  outline:none;
+  transition:0.4s;
 }
 
 /*Add a background color button on click*/
 .active, .accordion:hover{
-  background-color: #ccc;
+  background-color:#ccc;
 }
 
 /*Accordion panel style*/
 .panel{
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
+  padding:0 18px;
+  background-color:white;
+  display:none;
+  overflow:hidden;
 }
 
 .accordion:after{
-  content: '\02795'; /*Plus sign (+)*/
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
+  content:'\02795'; /*Plus sign (+)*/
+  font-size:13px;
+  color:#777;
+  float:right;
+  margin-left:5px;
 }
 
 .active:after{
-  content: "\2796"; /*Minus sign (-)*/
+  content:"\2796"; /*Minus sign (-)*/
 }

@@ -4,15 +4,21 @@
 <head>
   <title>SpaceX-Dragon</title>
   <meta charset="UTF-8" />
-  <meta name="description" content="Elon's space project."/>
+  <meta name="description" content="Elon's space project." />
   <meta name="author" content="Cameron Handie" />
   <meta name="robots" content="noindex" />
-  <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <link rel = "icon" type = "image/png" href = "assets/img/Dragon-Logo.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/7.0.0/d3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
 </head>
 
 <body>
     <header role="banner" class="primary">
-    <h1><a href="index.html">SpaceX-Dragon</a></h1>
+    <h1 id="logo" class="logo"><a href="index.html">SpaceX-Dragon</a></h1>
     <nav role="navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -161,10 +167,10 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.display = "block";
     }
   });
 }
