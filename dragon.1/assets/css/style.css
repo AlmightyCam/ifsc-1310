@@ -29,34 +29,41 @@ img{
   height:auto;
 }
 
-h1.logo {
-    margin-top: 15px; /* for this particular site, set this as you like */
-    position: relative; /* allows child element to be placed positioned wrt this one */
-    overflow:hidden; /* don’t let content leak beyond the header - not needed as height of anchor will cover whole header */
-    padding: 0; /* needed to counter the reset/default styles */
+h1.logo{
+    margin-top:15px;
+    position:relative;
+    overflow:hidden;
+    padding:0;
 }
 
-h1.logo a {
-    position: absolute; /* defaults to top:0, left:0 and so these can be left out */
-    height: 0; /* hiding text, prevent it peaking out */
-    width: 100%; /* 686px; fill the parent element */
-    background-position: left top;
-    background-repeat: no-repeat;
+h1.logo a{
+    position:absolute;
+    height:0;
+    width:100%;
+    background-position:left top;
+    background-repeat:no-repeat;
 }
 
-#logo {
-    height: 60px; /* height of replacement image */
+#logo{
+    height:90px;
 }
 
-#logo a {
-    padding-top: 60px; /* height of the replacement image */
-    background-image: url("SpaceX-Logo.png"); /* the replacement image */
+header.primary h1 a{
+    color: #ffffff;
+    background-image: url(https://assets.codepen.io/7248/logo-2.png);
+    display: block;
+    width: 450px;
+    height: 70px;
+    margin: 0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .container{
-  width: 70vw;
-  margin: 40px auto;
-  max-width: 960px;
+  width:70vw;
+  margin:40px auto;
+  max-width:960px;
 }
 
 ul{
