@@ -174,7 +174,7 @@ li a{
 }
 
 li a:hover{
-  background-color:#111;
+  background-color:#0455BF;
 }
 
 .active{
@@ -196,7 +196,7 @@ table caption{
 
 /*Button style*/
 .accordion{
-  background-color:#eee;
+  background-color:#ccc;
   color:#444;
   cursor:pointer;
   padding:18px;
