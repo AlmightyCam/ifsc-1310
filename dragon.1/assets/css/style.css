@@ -182,13 +182,34 @@ li a:hover{
 }
 
 table{
-  width:100%;
-  border:1px solid #F0F2A7;
+  margin-left: auto;
+  margin-right: auto;
+  width:75%;
+  border:1px solid #010D00;
   border-collapse:collapse;
 }
 
+table tr:nth-child(even){
+  background-color:rgba(0,0,0,.1);
+}
+
+table tr:hover{
+  background-color:rgba(13, 13, 171, 0.74);
+}
+
+table td{
+  border:1px solid #023373;
+  padding:5px;
+}
+
+table th{
+  background-color:#010D00;
+  color:#fff;
+  width:33%;
+}
+
 table caption{
-  color:#F0F2A7;
+  color:#0455BF;
   padding:5px;
   font-weight:bold;
   font-size:1.4rem;
